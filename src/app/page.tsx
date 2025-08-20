@@ -1,11 +1,11 @@
 "use client"
 import React, { useRef, useLayoutEffect, useState, useEffect, useMemo } from "react"
-import { CheckCircle, Star, GraduationCap, ChevronDown, ChevronUp } from "lucide-react"
+import { CheckCircle, Star, ChevronDown, ChevronUp } from "lucide-react"
 import Image from "next/image"
-import { plansData, unifiedPlansData, type EuropeCountry, type USProgram, type Plan, type UnifiedSelection } from "../constants/plans"
+import { unifiedPlansData, type Plan, type UnifiedSelection } from "../constants/plans"
 import { useSelector, useDispatch } from "react-redux"
 import type { RootState } from "../store"
-import { setRegion, setCountryOrProgram, setUnifiedSelection, setOpenFaqIndex } from "../store/uiSlice"
+import { setOpenFaqIndex } from "../store/uiSlice"
 import JourneyTimeline from "../components/JourneyTimeline/JourneyTimeline"
 import { AnimatedStatCard } from "../components/AnimatedStatCard/AnimatedStatCard"
 import { countryProgramData } from "../data/countryProgramData"
@@ -160,6 +160,7 @@ const testimonialsRestOfEurope = [
 ]
 
 // Rest of Europe: Journey Steps
+/*
 const stepsRestOfEurope = [
   {
     title: "Connect",
@@ -212,6 +213,7 @@ const stepsRestOfEurope = [
     ],
   },
 ]
+*/
 
 // Rest of Europe: FAQ
 const faqsRestOfEurope = [
@@ -658,7 +660,7 @@ export default function HomePage() {
   const numPlans = plans.length
 
   // Function to get the "Most Popular" tag based on selected destination
-  const getMostPopularTag = (selection: UnifiedSelection) => {
+  const getMostPopularTag = (_: UnifiedSelection) => {
     return 'Most Popular'
   }
 
@@ -842,7 +844,7 @@ export default function HomePage() {
                                 </button>
                               </div>
                               <div className="space-y-3">
-                                {Object.entries(plan.creditBreakdown).map(([key, value], idx) =>
+                                {Object.entries(plan.creditBreakdown).map(([key, value], _) =>
                                   value ? (
                                     <div key={key} className="bg-gray-50/80 backdrop-blur-sm rounded-xl p-3 border border-gray-100/50 hover:bg-gray-100/80 transition-all duration-300 group/item">
                                       <div className="flex items-center justify-between">

@@ -1,4 +1,33 @@
-export const countryProgramData: any = {
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface Plan {
+  name: string;
+  price: string;
+  features: string[];
+}
+
+interface TimelineStep {
+  step: number;
+  title: string;
+  description: string;
+}
+
+interface CountryData {
+  stats: Stat[];
+  plans: Plan[];
+  timeline: TimelineStep[];
+}
+
+interface CountryProgramData {
+  [region: string]: {
+    [country: string]: CountryData;
+  };
+}
+
+export const countryProgramData: CountryProgramData = {
   "Germany": {
     "Germany": {
       stats: [
