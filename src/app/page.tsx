@@ -683,29 +683,35 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-white min-w-full">
       {/* Hero Section - HGI iOS Design */}
-      <section className="bg-gradient-to-b from-[#F4F3FF] to-white pt-20 md:pt-32 pb-16 md:pb-24 text-center flex flex-col items-center">
-        {/* Brand Identifier - Smaller and Elegant */}
-        <div className="mb-6 md:mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-[#6F5ACC]/20">
-            <span className="text-sm md:text-base font-semibold text-gray-700 tracking-wide">LEAP SCHOLAR</span>
-            <span className="text-sm md:text-base font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent">PREMIUM</span>
+      <section className="bg-gradient-to-b from-[#F8F7FF] via-[#FEFEFE] to-white pt-24 md:pt-40 pb-20 md:pb-32 text-center flex flex-col items-center relative overflow-hidden">
+        {/* Subtle background elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#6F5ACC]/5 via-transparent to-transparent"></div>
+        
+        {/* Brand Identifier - HGI iOS Style */}
+        <div className="mb-8 md:mb-12 relative z-10">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/80 backdrop-blur-xl border border-[#6F5ACC]/10 shadow-lg shadow-black/5">
+            <span className="text-sm md:text-base font-semibold text-gray-800 tracking-wide letterSpacing-tight">LEAP SCHOLAR</span>
+            <span className="text-sm md:text-base font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent tracking-wide">PREMIUM</span>
           </div>
-          <div className="mt-3">
-            <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent">Germany</span>
+          <div className="mt-4 md:mt-6">
+            <span className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent tracking-tight">Germany</span>
           </div>
         </div>
         
         {/* Hero Statement - The Main Focus */}
-        <div className="mb-12 md:mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight font-heading px-6 leading-[1.1] max-w-6xl mx-auto">
-            <span className="bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent">
+        <div className="mb-16 md:mb-24 relative z-10">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight font-heading px-6 leading-[0.95] max-w-7xl mx-auto">
+            <span className="bg-gradient-to-r from-[#6F5ACC] via-[#8B7ED8] to-[#A291FB] bg-clip-text text-transparent">
               Your Dream University
             </span>
             <br />
-            <span className="text-gray-900">
+            <span className="text-gray-900 font-extrabold">
               Awaits
             </span>
           </h1>
+          <div className="mt-10 md:mt-14">
+            <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#6F5ACC] via-[#8B7ED8] to-[#A291FB] bg-clip-text text-transparent tracking-tight leading-tight">Die Reise beginnt!</span>
+          </div>
         </div>
       </section>
 
