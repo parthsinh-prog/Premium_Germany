@@ -2,6 +2,12 @@ import './globals.css';
 import { Providers } from './providers';
 import AppShell from './AppShell';
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Leap Scholar Premium - Study Abroad',
+  description: 'Your pathway to studying abroad with expert guidance and support.',
+};
 
 const inter = Inter({
   subsets: ['latin'],
