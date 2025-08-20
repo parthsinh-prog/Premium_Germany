@@ -96,6 +96,58 @@ const stepsFrance = [
   },
 ]
 
+// Germany: Journey Steps
+const stepsGermany = [
+  {
+    title: "Connect",
+    items: [
+      {
+        name: "Profile Evaluation Session", 
+        description: "Discuss your preferences, get answers to your questions & a personalised goal plan",
+      },
+      {
+        name: "University Shortlisting",
+        description: "Our experts will come back with an ideal list of Universities suited only for you", 
+      },
+      {
+        name: "Finalising your University",
+        description: "Discuss your shortlist and finalise universities that you want to apply for",
+      },
+    ],
+  },
+  {
+    title: "Start application process with writing SOPs, and completing your docs", 
+    items: [
+      {
+        name: "SOP, LOR & Resume Assistance",
+        description: "Get 100+ templates and a professional editor to craft the SOP & LOR for your profile",
+      },
+      {
+        name: "Application assistance for your Dream Universities", 
+        description: "You're almost at the finish line, all that's left now is to put in your application (Don't worry our team of experts will do that for you!)",
+      },
+    ],
+  },
+  {
+    title: "Visa Filing",
+    items: [
+      {
+        name: "Prep for Visa Interview",
+        description: "Once admit is received, a Visa expert will review your documents and also prep you up for the interview",
+      },
+    ],
+  },
+  {
+    title: "Finally", 
+    items: [
+      {
+        name: "Fly to your dream college ✈️",
+        description: "That's it, you're ready to fly! Leap Community will be waiting to welcome you in your dream college",
+      },
+    ],
+  },
+]
+
 // France: FAQ
 const faqsFrance = [
   {
@@ -282,60 +334,6 @@ const testimonialsGermany = [
     name: "Sai Teja",
     university: "Ludwig Maximilian University of Munich",
     text: `I had an outstanding experience with Leap Scholar. I completed my IELTS coaching and achieved my desired band score in just 1.5 months.`,
-  },
-]
-
-// Germany: Journey Steps
-const stepsGermany = [
-  {
-    title: "Connect",
-    items: [
-      {
-        name: "Profile Evaluation Session",
-        description: "Discuss your preferences, get answers to your questions & a personalised goal plan",
-      },
-      {
-        name: "University Shortlisting",
-        description: "Our experts will come back with an ideal list of Universities suited only for you",
-      },
-      {
-        name: "Finalising your University",
-        description: "Discuss your shortlist and finalise universities that you want to apply for",
-      },
-    ],
-  },
-  {
-    title: "Application",
-    items: [
-      {
-        name: "SOP, LOR & Resume Assistance",
-        description: "Get 100+ templates and a professional editor to craft the SOP & LOR for your profile",
-      },
-      {
-        name: "Application assistance for your Dream Universities",
-        description: `You're almost at the finish line, all that's left now is to put in your application (Don't worry our team of experts will do that for you!)`,
-      },
-    ],
-  },
-  {
-    title: "Visa Filing",
-    items: [
-      {
-        name: "Prep for Visa Interview",
-        description:
-          "Once admit is received, a Visa expert will review your documents and also prep you up for the interview",
-      },
-    ],
-  },
-  {
-    title: "Finally",
-    items: [
-      {
-        name: "Fly to your dream college ✈️",
-        description:
-          "That's it, you're ready to fly! Leap Community will be waiting to welcome you in your dream college",
-      },
-    ],
   },
 ]
 
@@ -628,7 +626,7 @@ export default function HomePage() {
       leapStats = leapStatsGermany
       testimonials = testimonialsGermany
       faqs = faqsGermany
-      steps = stepsFrance // Use France steps for now
+      steps = stepsGermany // Use Germany-specific steps
       break
     case 'france':
       leapStats = leapStatsFrance
