@@ -12,87 +12,54 @@ interface JourneyStep {
 
 const journeySteps: JourneyStep[] = [
   {
-    title: "Profile Assessment & Goal Setting",
+    title: "Connect 1:1 with experts, and finalise your list of colleges",
     items: [
       {
-        name: "Academic Background Evaluation",
-        description: "Comprehensive review of your educational credentials and academic performance"
+        name: "Profile Evaluation Session",
+        description: "Discuss your preferences, get answers to your questions & a personalised goal plan"
       },
-      {
-        name: "Career Aspirations Analysis",
-        description: "Understanding your professional goals and aligning them with study abroad opportunities"
-      },
-      {
-        name: "Country & Program Selection",
-        description: "Expert guidance on choosing the right destination and academic program"
-      }
-    ]
-  },
-  {
-    title: "Test Preparation & Documentation",
-    items: [
-      {
-        name: "IELTS/TOEFL Preparation",
-        description: "Comprehensive language test prep with band assurance programs"
-      },
-      {
-        name: "GMAT/GRE Coaching",
-        description: "Standardized test preparation for graduate programs"
-      },
-      {
-        name: "Document Compilation",
-        description: "Gathering and organizing all required academic and personal documents"
-      }
-    ]
-  },
-  {
-    title: "University Applications",
-    items: [
       {
         name: "University Shortlisting",
-        description: "Strategic selection of universities based on your profile and preferences"
-      },
-      {
-        name: "Application Submission",
-        description: "Complete application process management with expert review"
-      },
-      {
-        name: "SOP & LOR Writing",
-        description: "Professional Statement of Purpose and Letter of Recommendation assistance"
+        description: "Our experts will come back with an ideal list of Universities suited only for you"
       }
     ]
   },
   {
-    title: "Admission & Visa Processing",
+    title: "Start application process with writing SOPs, and completing your docs",
     items: [
       {
-        name: "Admission Decision Support",
-        description: "Guidance on accepting offers and scholarship negotiations"
+        name: "SOP, LOR & Resume Assistance",
+        description: "Get 100+ templates and a professional editor to craft the SOP & LOR for your profile"
       },
       {
-        name: "Visa Application",
-        description: "End-to-end visa processing with interview preparation"
-      },
-      {
-        name: "Financial Planning",
-        description: "Education loan assistance and financial documentation support"
+        name: "Application assistance for your Dream Universities",
+        description: "You're almost at the finish line, all that's left now is to put in your application (Don't worry our team of experts will do that for you!)"
       }
     ]
   },
   {
-    title: "Pre-Departure & Beyond",
+    title: "Visa Filing",
     items: [
       {
-        name: "Accommodation Arrangement",
-        description: "On-campus and off-campus housing assistance and booking"
+        name: "Prep for Visa Interview",
+        description: "Once admit is received, a Visa expert will review your documents and also prep you up for the interview"
       },
       {
-        name: "Travel & Insurance",
-        description: "Flight booking assistance and comprehensive travel insurance"
+        name: "Germany Visa Documentation",
+        description: "Complete support for German student visa requirements and embassy procedures"
+      }
+    ]
+  },
+  {
+    title: "Finally",
+    items: [
+      {
+        name: "Fly to your dream college ✈️",
+        description: "That's it, you're ready to fly! Leap Community will be waiting to welcome you in your dream college"
       },
       {
-        name: "Post-Arrival Support",
-        description: "Ongoing support during your initial months abroad"
+        name: "Settle in Germany",
+        description: "Ongoing support for accommodation, banking, and settling into German student life"
       }
     ]
   }
