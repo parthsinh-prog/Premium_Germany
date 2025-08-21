@@ -693,25 +693,19 @@ export default function HomePage() {
             <span className="text-sm md:text-base font-semibold text-gray-800 tracking-wide letterSpacing-tight">LEAP SCHOLAR</span>
             <span className="text-sm md:text-base font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent tracking-wide">PREMIUM</span>
           </div>
-          <div className="mt-4 md:mt-6">
-            <span className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#6F5ACC] to-[#A291FB] bg-clip-text text-transparent tracking-tight">Germany</span>
-          </div>
         </div>
         
         {/* Hero Statement - The Main Focus */}
         <div className="mb-16 md:mb-24 relative z-10">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight font-heading px-6 leading-[0.95] max-w-7xl mx-auto">
             <span className="bg-gradient-to-r from-[#6F5ACC] via-[#8B7ED8] to-[#A291FB] bg-clip-text text-transparent">
-              Your Dream University
+              Your German Dream
             </span>
             <br />
             <span className="text-gray-900 font-extrabold">
               Awaits
             </span>
           </h1>
-          <div className="mt-10 md:mt-14">
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#6F5ACC] via-[#8B7ED8] to-[#A291FB] bg-clip-text text-transparent tracking-tight leading-tight">Die Reise beginnt!</span>
-          </div>
         </div>
       </section>
 
